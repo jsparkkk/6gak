@@ -1,0 +1,382 @@
+[
+  {
+    "grade": 1,
+    "universities": [
+      { "name": "의과대학교", "capacity": 3050 },
+      { "name": "치과대학교", "capacity": 750 },
+      { "name": "한의과대학교", "capacity": 750 }
+    ]
+  },
+  {
+    "grade": 2,
+    "universities": [
+      { "name": "약학대학교", "capacity": 1750 },
+      { "name": "수의과대학교", "capacity": 500 },
+      { "name": "서울대학교", "capacity": 3178 },
+      { "name": "카이스트(KAIST)", "capacity": 830 }
+    ]
+  },
+  {
+    "grade": 3,
+    "universities": [
+      { "name": "연세대학교", "capacity": 3431 },
+      { "name": "고려대학교", "capacity": 3806 },
+      { "name": "포항공과대학교(POSTEC)", "capacity": 320 },
+      { "name": "경찰대학교", "capacity": 50 }
+    ]
+  },
+  {
+    "grade": 4,
+    "universities": [
+      { "name": "서울교육대학교", "capacity": 357 },
+      { "name": "서강대학교", "capacity": 1587 },
+      { "name": "성균관대학교", "capacity": 3303 },
+      { "name": "한양대학교", "capacity": 2820 }
+    ]
+  },
+  {
+    "grade": 5,
+    "universities": [
+      { "name": "대구경북과학기술원(DGIST)", "capacity": 220 },
+      { "name": "울산과학기술원(UNIST)", "capacity": 360 },
+      { "name": "광주과학기술원(GIST)", "capacity": 200 },
+      { "name": "한국에너지공과대학교", "capacity": 100 },
+      { "name": "경인교육대학교", "capacity": 600 },
+      { "name": "중앙대학교", "capacity": 4344 },
+      { "name": "이화여자대학교", "capacity": 3063 },
+      { "name": "국군간호사관학교", "capacity": 90 },
+      { "name": "한국외국어대학교", "capacity": 3377 },
+      { "name": "서울시립대학교", "capacity": 1711 },
+      { "name": "경희대학교", "capacity": 4741 }
+    ]
+  },
+  {
+    "grade": 6,
+    "universities": [
+      { "name": "공군사관학교", "capacity": 215 },
+      { "name": "육군사관학교", "capacity": 330 },
+      { "name": "건국대학교", "capacity": 3022 },
+      { "name": "동국대학교", "capacity": 2708 },
+      { "name": "홍익대학교", "capacity": 3684 },
+      { "name": "숙명여자대학교", "capacity": 2120 },
+      { "name": "대구교육대학교", "capacity": 384 },
+      { "name": "부산교육대학교", "capacity": 357 },
+      { "name": "광주교육대학교", "capacity": 327 },
+      { "name": "춘천교육대학교", "capacity": 321 },
+      { "name": "공주교육대학교", "capacity": 354 },
+      { "name": "청주교육대학교", "capacity": 288 },
+      { "name": "전주교육대학교", "capacity": 287 },
+      { "name": "진주교육대학교", "capacity": 319 }
+    ]
+  },
+  {
+    "grade": 7,
+    "universities": [
+      { "name": "해군사관학교", "capacity": 170 },
+      { "name": "아주대학교", "capacity": 1875 },
+      { "name": "숭실대학교", "capacity": 2681 },
+      { "name": "인하대학교", "capacity": 3418 },
+      { "name": "국민대학교", "capacity": 2869 },
+      { "name": "한국교원대학교", "capacity": 549 },
+      { "name": "서울과학기술대학교", "capacity": 2071 },
+      { "name": "세종대학교", "capacity": 2332 },
+      { "name": "단국대학교(죽전)", "capacity": 4632 }
+    ]
+  },
+  {
+    "grade": 8,
+    "universities": [
+      { "name": "한양대학교(에리카)", "capacity": 1838 },
+      { "name": "성신여자대학교", "capacity": 2063 },
+      { "name": "광운대학교", "capacity": 1687 },
+      { "name": "가천대학교", "capacity": 3768 },
+      { "name": "부산대학교", "capacity": 4255 },
+      { "name": "경북대학교", "capacity": 4614 },
+      { "name": "명지대학교", "capacity": 3000 }
+    ]
+  },
+  {
+    "grade": 9,
+    "universities": [
+      { "name": "한국항공대학교", "capacity": 830 },
+      { "name": "서울여자대학교", "capacity": 1592 },
+      { "name": "전남대학교", "capacity": 3932 },
+      { "name": "덕성여자대학교", "capacity": 1161 },
+      { "name": "연세대학교(미래)", "capacity": 1332 },
+      { "name": "가톨릭대학교", "capacity": 1699 },
+      { "name": "상명대학교", "capacity": 2611 },
+      { "name": "인천대학교", "capacity": 2496 }
+    ]
+  },
+  {
+    "grade": 10,
+    "universities": [
+      { "name": "동덕여자대학교", "capacity": 1513 },
+      { "name": "삼육대학교", "capacity": 1121 },
+      { "name": "경기대학교", "capacity": 2930 }
+    ]
+  },
+  {
+    "grade": 11,
+    "universities": [
+      { "name": "충남대학교", "capacity": 3435 },
+      { "name": "차의과학대학교", "capacity": 475 },
+      { "name": "부경대학교", "capacity": 3278 },
+      { "name": "건국대학교(글로컬)", "capacity": 1553 }
+    ]
+  },
+  {
+    "grade": 12,
+    "universities": [
+      { "name": "성공회대학교", "capacity": 504 },
+      { "name": "한성대학교", "capacity": 1463 },
+      { "name": "명지대학교(용인)", "capacity": 2670 },
+      { "name": "총신대학교", "capacity": 334 },
+      { "name": "한국산업기술대학교", "capacity": 1389 },
+      { "name": "한국해양대학교", "capacity": 1440 }
+    ]
+  },
+  {
+    "grade": 13,
+    "universities": [
+      { "name": "을지대학교", "capacity": 1030 },
+      { "name": "충북대학교", "capacity": 2749 },
+      { "name": "강원대학교", "capacity": 4509 },
+      { "name": "전북대학교", "capacity": 3829 },
+      { "name": "고려대학교(세종)", "capacity": 1321 },
+      { "name": "한경대학교", "capacity": 1212 },
+      { "name": "영남대학교", "capacity": 4561 },
+      { "name": "한동대학교", "capacity": 729 }
+    ]
+  },
+  {
+    "grade": 14,
+    "universities": [
+      { "name": "한국기술교육대학교", "capacity": 836 },
+      { "name": "공주대학교", "capacity": 2734 },
+      { "name": "단국대학교(천안)", "capacity": 0 },
+      { "name": "서경대학교", "capacity": 1275 },
+      { "name": "순천향대학교", "capacity": 2358 },
+      { "name": "한국교통대학교", "capacity": 1911 },
+      { "name": "경상대학교", "capacity": 3037 }
+    ]
+  },
+  {
+    "grade": 15,
+    "universities": [
+      { "name": "청운대학교", "capacity": 0 },
+      { "name": "제주대학교", "capacity": 2118 },
+      { "name": "동아대학교", "capacity": 4070 },
+      { "name": "추계예술대학교", "capacity": 271 },
+      { "name": "수원대학교", "capacity": 2199 }
+    ]
+  },
+  {
+    "grade": 16,
+    "universities": [
+      { "name": "용인대학교", "capacity": 1410 },
+      { "name": "중부대학교(고양)", "capacity": 0 },
+      { "name": "목포가톨릭대학교", "capacity": 120 },
+      { "name": "장로회신학대학교", "capacity": 150 },
+      { "name": "강남대학교", "capacity": 1503 },
+      { "name": "한국체육대학교", "capacity": 545 },
+      { "name": "한세대학교", "capacity": 568 }
+    ]
+  },
+  {
+    "grade": 17,
+    "universities": [
+      { "name": "순천대학교", "capacity": 1601 },
+      { "name": "한림대학교", "capacity": 1715 },
+      { "name": "성결대학교", "capacity": 1203 },
+      { "name": "상명대학교(천안)", "capacity": 0 },
+      { "name": "한남대학교", "capacity": 2675 },
+      { "name": "한밭대학교", "capacity": 1852 },
+      { "name": "꽃동네대학교", "capacity": 109 }
+    ]
+  },
+  {
+    "grade": 18,
+    "universities": [
+      { "name": "백석대학교", "capacity": 2804 },
+      { "name": "대진대학교", "capacity": 1793 },
+      { "name": "한신대학교", "capacity": 1173 },
+      { "name": "한서대학교", "capacity": 1581 },
+      { "name": "협성대학교", "capacity": 1007 },
+      { "name": "목포해양대학교", "capacity": 693 }
+    ]
+  },
+  {
+    "grade": 19,
+    "universities": [
+      { "name": "안양대학교", "capacity": 1142 },
+      { "name": "창원대학교", "capacity": 1763 },
+      { "name": "예수대학교", "capacity": 125 },
+      { "name": "신경대학교", "capacity": 252 },
+      { "name": "중부대학교(충청)", "capacity": 1945 },
+      { "name": "전주대학교", "capacity": 2521 },
+      { "name": "건양대학교", "capacity": 1717 },
+      { "name": "청주대학교", "capacity": 2632 },
+      { "name": "나사렛대학교", "capacity": 1215 }
+    ]
+  },
+  {
+    "grade": 20,
+    "universities": [
+      { "name": "금강대학교", "capacity": 110 },
+      { "name": "계명대학교", "capacity": 4615 },
+      { "name": "우송대학교", "capacity": 2013 },
+      { "name": "울산대학교", "capacity": 2741 },
+      { "name": "광주여자대학교", "capacity": 895 },
+      { "name": "호서대학교", "capacity": 2887 },
+      { "name": "서울신학대학교", "capacity": 502 },
+      { "name": "조선대학교", "capacity": 4361 },
+      { "name": "대전대학교", "capacity": 2087 }
+    ]
+  },
+  {
+    "grade": 21,
+    "universities": [
+      { "name": "안동대학교", "capacity": 1468 },
+      { "name": "목포대학교", "capacity": 1581 },
+      { "name": "김천대학교", "capacity": 691 },
+      { "name": "강릉원주대학교", "capacity": 1833 },
+      { "name": "금오공과대학교", "capacity": 1208 },
+      { "name": "서원대학교", "capacity": 1626 },
+      { "name": "경성대학교", "capacity": 2748 },
+      { "name": "강서대학교", "capacity": 278 }
+    ]
+  },
+  {
+    "grade": 22,
+    "universities": [
+      { "name": "원광대학교", "capacity": 3544 },
+      { "name": "강원대학교(삼척)", "capacity": 0 },
+      { "name": "전남대학교(여수)", "capacity": 0 },
+      { "name": "대구대학교", "capacity": 4070 },
+      { "name": "목원대학교", "capacity": 1865 },
+      { "name": "군산대학교", "capacity": 1739 },
+      { "name": "한국성서대학교", "capacity": 221 },
+      { "name": "동의대학교", "capacity": 3595 },
+      { "name": "대구가톨릭대학교", "capacity": 2865 }
+    ]
+  },
+  {
+    "grade": 23,
+    "universities": [
+      { "name": "평택대학교", "capacity": 862 },
+      { "name": "남부대학교", "capacity": 708 },
+      { "name": "광주대학교", "capacity": 1652 },
+      { "name": "동국대학교(경주)", "capacity": 1762 }
+    ]
+  },
+  {
+    "grade": 24,
+    "universities": [
+      { "name": "세한대학교", "capacity": 915 },
+      { "name": "가톨릭관동대학교", "capacity": 2080 },
+      { "name": "인제대학교", "capacity": 2030 },
+      { "name": "한라대학교", "capacity": 880 },
+      { "name": "선문대학교", "capacity": 2050 },
+      { "name": "동서대학교", "capacity": 2276 },
+      { "name": "신한대학교", "capacity": 1459 }
+    ]
+  },
+  {
+    "grade": 25,
+    "universities": [
+      { "name": "세명대학교", "capacity": 1883 },
+      { "name": "감리교신학대학교", "capacity": 206 },
+      { "name": "우석대학교", "capacity": 1726 },
+      { "name": "부산외국어대학교", "capacity": 1818 },
+      { "name": "호원대학교", "capacity": 1115 },
+      { "name": "남서울대학교", "capacity": 2204 },
+      { "name": "동양대학교", "capacity": 0 },
+      { "name": "중원대학교", "capacity": 968 }
+    ]
+  },
+  {
+    "grade": 26,
+    "universities": [
+      { "name": "경남과학기술대학교", "capacity": 1129 },
+      { "name": "신라대학교", "capacity": 2143 },
+      { "name": "영산대학교(해운대)", "capacity": 1503 },
+      { "name": "대구한의대학교", "capacity": 1518 },
+      { "name": "수원가톨릭대학교", "capacity": 90 },
+      { "name": "경주대학교", "capacity": 780 },
+      { "name": "동신대학교", "capacity": 1550 },
+      { "name": "배재대학교", "capacity": 2054 },
+      { "name": "고신대학교", "capacity": 886 }
+    ]
+  },
+  {
+    "grade": 27,
+    "universities": [
+      { "name": "호남대학교", "capacity": 1566 },
+      { "name": "가야대학교", "capacity": 571 },
+      { "name": "부산가톨릭대학교", "capacity": 916 },
+      { "name": "서울한영대학교", "capacity": 182 },
+      { "name": "경일대학교", "capacity": 1584 },
+      { "name": "광주가톨릭대학교", "capacity": 40 },
+      { "name": "대전가톨릭대학교", "capacity": 40 }
+    ]
+  },
+  {
+    "grade": 28,
+    "universities": [
+      { "name": "상지대학교", "capacity": 2272 },
+      { "name": "한국국제대학교", "capacity": 664 },
+      { "name": "경운대학교", "capacity": 1184 },
+      { "name": "동명대학교", "capacity": 1819 },
+      { "name": "송원대학교", "capacity": 800 },
+      { "name": "청운대학교(홍성)", "capacity": 1215 },
+      { "name": "극동대학교", "capacity": 935 },
+      { "name": "대전신학대학교", "capacity": 32 },
+      { "name": "침례신학대학교", "capacity": 366 }
+    ]
+  },
+  {
+    "grade": 29,
+    "universities": [
+      { "name": "영산대학교(양산)", "capacity": 1503 },
+      { "name": "루터대학교", "capacity": 85 },
+      { "name": "서울기독대학교", "capacity": 138 },
+      { "name": "제주국제대학교", "capacity": 370 },
+      { "name": "창신대학교", "capacity": 500 },
+      { "name": "영산선학대학교", "capacity": 50 },
+      { "name": "한일장신대학교", "capacity": 219 },
+      { "name": "경동대학교(원주)", "capacity": 1788 },
+      { "name": "위덕대학교", "capacity": 780 }
+    ]
+  },
+  {
+    "grade": 30,
+    "universities": [
+      { "name": "아세아연합신학대학교", "capacity": 186 },
+      { "name": "광신대학교", "capacity": 122 },
+      { "name": "한려대학교", "capacity": 316 },
+      { "name": "호남신학대학교", "capacity": 137 },
+      { "name": "유원대학교", "capacity": 982 },
+      { "name": "칼빈대학교", "capacity": 91 },
+      { "name": "서울장신대학교", "capacity": 113 },
+      { "name": "중앙승가대학교", "capacity": 122 },
+      { "name": "부산장신대학교", "capacity": 49 },
+      { "name": "대신대학교", "capacity": 116 },
+      { "name": "영남신학대학교", "capacity": 115 },
+      { "name": "대구예술대학교", "capacity": 387 },
+      { "name": "예원예술대학교", "capacity": 307 }
+    ]
+  },
+  {
+    "grade": 31,
+    "universities": [
+      { "name": "한국방송통신대학교", "capacity": 0 },
+      { "name": "기타 4년제 대학교", "capacity": 0 },
+      { "name": "전문대학교", "capacity": 130000 }
+    ]
+  },
+  {
+    "grade": 32,
+    "universities": [{ "name": "고등학교 졸업", "capacity": 0 }]
+  }
+]

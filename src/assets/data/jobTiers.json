@@ -1,0 +1,125 @@
+[
+  {
+    "tier": "T1",
+    "jobs": [
+      { "name": "판사", "count": 0.3 },
+      { "name": "검사", "count": 0.2 },
+      { "name": "변호사", "count": 4 },
+      { "name": "의사", "count": 16.6 },
+      { "name": "치과의사", "count": 2.8 },
+      { "name": "한의사", "count": 2.1 },
+      { "name": "5급 고시 공무원", "count": 2.6 },
+      { "name": "교수", "count": 7.7 }
+    ],
+    "total": 36.3,
+    "cumulative": 36.3,
+    "percentile": 1.26
+  },
+  {
+    "tier": "T2",
+    "jobs": [
+      { "name": "약사", "count": 4 },
+      { "name": "수의사", "count": 1.4 },
+      { "name": "공인회계사", "count": 1 },
+      { "name": "변리사", "count": 0.5 }
+    ],
+    "total": 6.9,
+    "cumulative": 43.2,
+    "percentile": 1.5
+  },
+  {
+    "tier": "T3",
+    "jobs": [
+      { "name": "대기업 종사자 (종사자 1000인 이상 사업체 종사)", "count": 286 },
+      { "name": "군 장교 (사관학교 출신)", "count": 3 },
+      { "name": "경찰 간부 (경찰대 출신)", "count": 2 }
+    ],
+    "total": 291,
+    "cumulative": 334.2,
+    "percentile": 11.58
+  },
+  {
+    "tier": "T4",
+    "jobs": [
+      { "name": "감정평가사", "count": 0.5 },
+      { "name": "세무사", "count": 1.6 },
+      { "name": "법무사", "count": 0.7 },
+      { "name": "노무사", "count": 0.5 }
+    ],
+    "total": 3.3,
+    "cumulative": 337.5,
+    "percentile": 11.7
+  },
+  {
+    "tier": "T5",
+    "jobs": [
+      { "name": "공기업·공공기관 종사자", "count": 42 },
+      { "name": "7급 공무원", "count": 5 },
+      { "name": "교사 (정규 초·중·고)", "count": 36 }
+    ],
+    "total": 83,
+    "cumulative": 420.5,
+    "percentile": 14.57
+  },
+  {
+    "tier": "T6",
+    "jobs": [
+      { "name": "기술사", "count": 2.2 },
+      { "name": "건축사", "count": 2 },
+      { "name": "손해사정사", "count": 0.1 },
+      { "name": "관세사", "count": 0.2 },
+      { "name": "보험계리사", "count": 0.1 }
+    ],
+    "total": 4.6,
+    "cumulative": 425.1,
+    "percentile": 14.73
+  },
+  {
+    "tier": "T7",
+    "jobs": [
+      { "name": "간호사", "count": 26 },
+      { "name": "9급 공무원", "count": 25 },
+      { "name": "중견기업 종사자 (종사자 300인 이상 사업체 종사)", "count": 158 }
+    ],
+    "total": 209,
+    "cumulative": 634.1,
+    "percentile": 21.97
+  },
+  {
+    "tier": "T8",
+    "jobs": [
+      { "name": "경찰·소방 공무원", "count": 15 },
+      { "name": "대학교원 (비전임)", "count": 15 },
+      { "name": "행정사", "count": 1 },
+      { "name": "연구원 (비교원)", "count": 45 }
+    ],
+    "total": 76,
+    "cumulative": 710.1,
+    "percentile": 24.61
+  },
+  {
+    "tier": "T9",
+    "jobs": [
+      { "name": "사교육 종사자 (학원강사 등)", "count": 80 },
+      { "name": "교사 (비정규, 기간제 등)", "count": 20 },
+      { "name": "공인중개사", "count": 11 },
+      { "name": "보건계 기타 (물리치료, 치위생, 치기공, 간조 등)", "count": 80 },
+      { "name": "군 부사관", "count": 11 }
+    ],
+    "total": 182,
+    "cumulative": 892.1,
+    "percentile": 30.91
+  },
+  {
+    "tier": "T10",
+    "jobs": [
+      {
+        "name": "중소기업·자영업 종사자(종사자 300인 이하, 소상공인 등)",
+        "count": 1993.7
+      }
+    ],
+    "total": 1993.7,
+    "cumulative": 2885.8,
+    "percentile": 100
+  }
+]

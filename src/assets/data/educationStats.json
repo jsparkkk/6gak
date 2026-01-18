@@ -1,0 +1,56 @@
+{
+  "20-24": {
+    "total": 2587341,
+    "highSchool": 250000,
+    "juniorCollege": 150000,
+    "university": 1850000
+  },
+  "25-29": {
+    "total": 3289501,
+    "highSchool": 570000,
+    "juniorCollege": 710000,
+    "university": 1860000
+  },
+  "30-34": {
+    "total": 3486616,
+    "highSchool": 560000,
+    "juniorCollege": 800000,
+    "university": 2000000
+  },
+  "35-39": {
+    "total": 3136745,
+    "highSchool": 470000,
+    "juniorCollege": 700000,
+    "university": 1850000
+  },
+  "40-44": {
+    "total": 3828309,
+    "highSchool": 770000,
+    "juniorCollege": 910000,
+    "university": 1850000
+  },
+  "45-49": {
+    "total": 3851257,
+    "highSchool": 1050000,
+    "juniorCollege": 900000,
+    "university": 1800000
+  },
+  "50-54": {
+    "total": 4415019,
+    "highSchool": 1780000,
+    "juniorCollege": 750000,
+    "university": 1580000
+  },
+  "55-59": {
+    "total": 5281590,
+    "highSchool": 2070000,
+    "juniorCollege": 520000,
+    "university": 1400000
+  },
+  "60-64": {
+    "total": 5179691,
+    "highSchool": 2000000,
+    "juniorCollege": 350000,
+    "university": 1060000
+  }
+}

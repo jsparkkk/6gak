@@ -1,0 +1,58 @@
+{
+  "version": "1.0.0",
+  "units": "KRW",
+
+  "overall": {
+    "median": 240000000,
+    "pct_unit": "percent",
+    "bins": [
+      { "lo": -100000000, "hi": 0, "pct": 3.0 },
+      { "lo": 0, "hi": 100000000, "pct": 26.2 },
+      { "lo": 100000000, "hi": 200000000, "pct": 15.5 },
+      { "lo": 200000000, "hi": 300000000, "pct": 12.2 },
+      { "lo": 300000000, "hi": 400000000, "pct": 9.1 },
+      { "lo": 400000000, "hi": 500000000, "pct": 6.6 },
+      { "lo": 500000000, "hi": 600000000, "pct": 4.9 },
+      { "lo": 600000000, "hi": 700000000, "pct": 3.6 },
+      { "lo": 700000000, "hi": 800000000, "pct": 3.1 },
+      { "lo": 800000000, "hi": 900000000, "pct": 2.7 },
+      { "lo": 900000000, "hi": 1000000000, "pct": 2.3 },
+      { "lo": 1000000000, "hi": 1500000000, "pct": 5.0 },
+      { "lo": 1500000000, "hi": 3300000000, "pct": 4.0 },
+      { "lo": 3300000000, "hi": null, "pct": 1.0, "open_ended": true }
+    ],
+    "tail": {
+      "model": "cap",
+      "cap_percentile": 99.0,
+      "pareto_alpha": null,
+      "open_lo": 3300000000
+    }
+  },
+
+  "age_stats": {
+    "20s": { "median": 50000000, "mean": 100000000 },
+    "30s": { "median": 160000000, "mean": 250000000 },
+    "40s": { "median": 290000000, "mean": 450000000 },
+    "50s": { "median": 300000000, "mean": 510000000 },
+    "60s": { "median": 250000000, "mean": 520000000 }
+  },
+
+  "age_shape_eta": {
+    "20s": null,
+    "30s": null,
+    "40s": null,
+    "50s": null,
+    "60s": null
+  },
+
+  "settings": {
+    "percentile_rounding_digits": 2,
+    "negative_range_handling": "linear_scale",
+    "normalize_bin_percents": true
+  },
+
+  "meta": {
+    "total_pct_sum_raw": 99.2,
+    "notes": "bins.pct are raw shares from provided data; util should normalize to 100%. The last bin is open-ended (33억+). age_shape_eta may be fitted at runtime to match each age group's mean."
+  }
+}
