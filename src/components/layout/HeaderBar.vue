@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex items-center justify-between px-4 py-3 my-1 mx-1 bg-white shadow-sm border-b border-gray-100 rounded-xl sticky top-1 z-50"
+    class="flex items-center justify-between px-4 py-3 my-1 mx-1 bg-white shadow-sm border-b border-gray-100 rounded-xl"
   >
     <div class="flex items-center gap-2">
       <img src="@/assets/logo.svg" alt="6GAK" class="w-7 h-7" />
@@ -11,9 +11,8 @@
 
     <div class="flex items-center gap-1">
       <button
-        @click="onInfo"
+        @click="showModal = true"
         class="p-2 text-gray-400 hover:text-indigo-600 hover:bg-indigo-50 rounded-full transition-all duration-200"
-        aria-label="서비스 정보"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -53,12 +52,17 @@
       </button>
     </div>
   </header>
+
+  <InfoModal v-if="showModal" @close="showModal = false" />
 </template>
 
 <script setup>
-const onInfo = () => {
-  alert('이 서비스는 통계청 데이터를 기반으로 개인 스펙을 시각화합니다.')
-}
+import { ref } from 'vue'
+// 1. 방금 만든 모달 불러오기
+import InfoModal from './InfoModal.vue'
+
+// 2. 모달이 열려있는지 닫혀있는지 상태 저장 (처음엔 false: 안보임)
+const showModal = ref(false)
 
 const onShare = () => {
   navigator.clipboard
