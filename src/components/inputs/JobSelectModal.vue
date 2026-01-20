@@ -1,10 +1,10 @@
 <template>
   <div
-    class="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 px-4"
+    class="fixed inset-0 z-[100] flex items-start justify-center pt-20 bg-black/50 px-4"
     @click.self="$emit('close')"
   >
     <div
-      class="w-full max-w-sm bg-white rounded-2xl shadow-2xl overflow-hidden animate-fade-in-up flex flex-col max-h-[60vh] md:max-h-[80vh]"
+      class="w-full max-w-sm bg-white rounded-2xl shadow-2xl overflow-hidden animate-fade-in-up flex flex-col max-h-[70vh] md:max-h-[80vh]"
     >
       <div class="px-5 py-4 border-b border-gray-100 flex justify-between items-center shrink-0">
         <h2 class="text-lg font-bold text-gray-800">직업 선택</h2>
