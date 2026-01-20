@@ -11,8 +11,9 @@
 
     <div class="flex items-center gap-1">
       <button
-        @click="showModal = true"
+        @click="showInfoModal = true"
         class="p-2 text-gray-400 hover:text-indigo-600 hover:bg-indigo-50 rounded-full transition-all duration-200"
+        aria-label="서비스 정보"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +32,7 @@
       </button>
 
       <button
-        @click="onShare"
+        @click="showShareModal = true"
         class="p-2 text-gray-400 hover:text-indigo-600 hover:bg-indigo-50 rounded-full transition-all duration-200"
         aria-label="링크 공유"
       >
@@ -53,68 +54,18 @@
     </div>
   </header>
 
-  <InfoModal v-if="showModal" @close="showModal = false" />
-  <Transition name="fade">
-    <div
-      v-if="showToast"
-      class="fixed bottom-10 left-1/2 -translate-x-1/2 z-[200] bg-gray-800 text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg flex items-center gap-2"
-    >
-      <span>✅ 링크가 복사되었습니다!</span>
-    </div>
-  </Transition>
+  <InfoModal v-if="showInfoModal" @close="showInfoModal = false" />
+
+  <ShareModal v-if="showShareModal" @close="showShareModal = false" />
 </template>
 
 <script setup>
 import { ref } from 'vue'
 import InfoModal from './InfoModal.vue'
+// 새로 만든 공유 모달 가져오기
+import ShareModal from './ShareModal.vue'
 
-const showModal = ref(false)
-const showToast = ref(false) // 토스트 메시지 상태
-
-const onShare = async () => {
-  // 1. 모바일: 네이티브 공유 창 띄우기 (Web Share API)
-  if (navigator.share) {
-    try {
-      await navigator.share({
-        title: '육각형의 남자',
-        text: '대한민국 데이터 기반 내 등급 확인하기',
-        url: window.location.href,
-      })
-      return // 공유 성공시 여기서 끝
-    } catch (err) {
-      // 사용자가 취소했거나 에러가 나면 아래 복사 로직으로 넘어감 (Fallback)
-      console.log('공유 취소됨')
-    }
-  }
-
-  // 2. PC 또는 지원 안 함: 클립보드 복사 + 토스트 메시지
-  copyToClipboard()
-}
-
-const copyToClipboard = () => {
-  navigator.clipboard
-    .writeText(window.location.href)
-    .then(() => {
-      // 토스트 메시지 보여주기
-      showToast.value = true
-      // 2초 뒤에 사라지게 하기
-      setTimeout(() => {
-        showToast.value = false
-      }, 2000)
-    })
-    .catch(() => alert('복사에 실패했습니다.')) // 정말 만약의 경우
-}
+// 모달 상태 관리
+const showInfoModal = ref(false)
+const showShareModal = ref(false)
 </script>
-
-<style scoped>
-/* 토스트 메시지 애니메이션 (부드럽게 사라짐) */
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-</style>
