@@ -54,20 +54,67 @@
   </header>
 
   <InfoModal v-if="showModal" @close="showModal = false" />
+  <Transition name="fade">
+    <div
+      v-if="showToast"
+      class="fixed bottom-10 left-1/2 -translate-x-1/2 z-[200] bg-gray-800 text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg flex items-center gap-2"
+    >
+      <span>✅ 링크가 복사되었습니다!</span>
+    </div>
+  </Transition>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-// 1. 방금 만든 모달 불러오기
 import InfoModal from './InfoModal.vue'
 
-// 2. 모달이 열려있는지 닫혀있는지 상태 저장 (처음엔 false: 안보임)
 const showModal = ref(false)
+const showToast = ref(false) // 토스트 메시지 상태
 
-const onShare = () => {
+const onShare = async () => {
+  // 1. 모바일: 네이티브 공유 창 띄우기 (Web Share API)
+  if (navigator.share) {
+    try {
+      await navigator.share({
+        title: '육각형의 남자',
+        text: '대한민국 데이터 기반 내 등급 확인하기',
+        url: window.location.href,
+      })
+      return // 공유 성공시 여기서 끝
+    } catch (err) {
+      // 사용자가 취소했거나 에러가 나면 아래 복사 로직으로 넘어감 (Fallback)
+      console.log('공유 취소됨')
+    }
+  }
+
+  // 2. PC 또는 지원 안 함: 클립보드 복사 + 토스트 메시지
+  copyToClipboard()
+}
+
+const copyToClipboard = () => {
   navigator.clipboard
     .writeText(window.location.href)
-    .then(() => alert('링크가 클립보드에 복사되었습니다! 친구들에게 공유해보세요.'))
-    .catch(() => alert('복사에 실패했습니다.'))
+    .then(() => {
+      // 토스트 메시지 보여주기
+      showToast.value = true
+      // 2초 뒤에 사라지게 하기
+      setTimeout(() => {
+        showToast.value = false
+      }, 2000)
+    })
+    .catch(() => alert('복사에 실패했습니다.')) // 정말 만약의 경우
 }
 </script>
+
+<style scoped>
+/* 토스트 메시지 애니메이션 (부드럽게 사라짐) */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>
