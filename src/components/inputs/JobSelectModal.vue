@@ -4,7 +4,7 @@
     @click.self="$emit('close')"
   >
     <div
-      class="w-full max-w-sm bg-white rounded-2xl shadow-2xl overflow-hidden animate-fade-in-up flex flex-col max-h-[80vh]"
+      class="w-full max-w-sm bg-white rounded-2xl shadow-2xl overflow-hidden animate-fade-in-up flex flex-col max-h-[60vh] md:max-h-[80vh]"
     >
       <div class="px-5 py-4 border-b border-gray-100 flex justify-between items-center shrink-0">
         <h2 class="text-lg font-bold text-gray-800">직업 선택</h2>
