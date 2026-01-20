@@ -2,14 +2,12 @@
   {
     "name": "의과대학교",
     "grade": 1,
-    "capacity": 3050,
-    "comment": "checked---------------------"
+    "capacity": 3050
   },
   {
     "name": "치과대학교",
     "grade": 1,
-    "capacity": 750,
-    "comment": "checked---------------------"
+    "capacity": 750
   },
   {
     "name": "한의과대학교",
@@ -29,8 +27,7 @@
   {
     "name": "서울대학교",
     "grade": 2,
-    "capacity": 3451,
-    "comment": "checked---------------------"
+    "capacity": 3451
   },
   {
     "name": "카이스트(KAIST)",
@@ -40,20 +37,17 @@
   {
     "name": "연세대학교",
     "grade": 3,
-    "capacity": 3431,
-    "comment": "checked---------------------"
+    "capacity": 3431
   },
   {
     "name": "고려대학교",
     "grade": 3,
-    "capacity": 3806,
-    "comment": "checked---------------------"
+    "capacity": 3806
   },
   {
     "name": "포항공과대학교(POSTEC)",
     "grade": 3,
-    "capacity": 320,
-    "comment": "checked---------------------"
+    "capacity": 320
   },
   {
     "name": "경찰대학교",
@@ -68,20 +62,17 @@
   {
     "name": "서강대학교",
     "grade": 4,
-    "capacity": 1587,
-    "comment": "checked---------------------"
+    "capacity": 1587
   },
   {
     "name": "성균관대학교",
     "grade": 4,
-    "capacity": 3303,
-    "comment": "checked---------------------"
+    "capacity": 3303
   },
   {
     "name": "한양대학교",
     "grade": 4,
-    "capacity": 2820,
-    "comment": "checked---------------------"
+    "capacity": 2820
   },
   {
     "name": "대구경북과학기술원(DGIST)",
@@ -111,14 +102,12 @@
   {
     "name": "중앙대학교",
     "grade": 5,
-    "capacity": 4378,
-    "comment": "checked---------------------"
+    "capacity": 4378
   },
   {
     "name": "이화여자대학교",
     "grade": 5,
-    "capacity": 3063,
-    "comment": "checked---------------------"
+    "capacity": 3063
   },
   {
     "name": "국군간호사관학교",
@@ -128,20 +117,17 @@
   {
     "name": "한국외국어대학교",
     "grade": 5,
-    "capacity": 3377,
-    "comment": "checked---------------------"
+    "capacity": 3377
   },
   {
     "name": "서울시립대학교",
     "grade": 5,
-    "capacity": 1747,
-    "comment": "checked---------------------"
+    "capacity": 1747
   },
   {
     "name": "경희대학교",
     "grade": 5,
-    "capacity": 4741,
-    "comment": "checked---------------------"
+    "capacity": 4741
   },
   {
     "name": "공군사관학교",
@@ -156,26 +142,22 @@
   {
     "name": "건국대학교",
     "grade": 6,
-    "capacity": 3000,
-    "comment": "checked---------------------"
+    "capacity": 3000
   },
   {
     "name": "동국대학교",
     "grade": 6,
-    "capacity": 2708,
-    "comment": "checked---------------------"
+    "capacity": 2708
   },
   {
     "name": "홍익대학교",
     "grade": 6,
-    "capacity": 3684,
-    "comment": "checked---------------------"
+    "capacity": 3684
   },
   {
     "name": "숙명여자대학교",
     "grade": 6,
-    "capacity": 2120,
-    "comment": "checked---------------------"
+    "capacity": 2120
   },
   {
     "name": "대구교육대학교",
@@ -225,278 +207,232 @@
   {
     "name": "아주대학교",
     "grade": 7,
-    "capacity": 1875,
-    "comment": "checked---------------------"
+    "capacity": 1875
   },
   {
     "name": "숭실대학교",
     "grade": 7,
-    "capacity": 2681,
-    "comment": "checked---------------------"
+    "capacity": 2681
   },
   {
     "name": "인하대학교",
     "grade": 7,
-    "capacity": 3418,
-    "comment": "checked---------------------"
+    "capacity": 3418
   },
   {
     "name": "국민대학교",
     "grade": 7,
-    "capacity": 2869,
-    "comment": "checked---------------------"
+    "capacity": 2869
   },
   {
     "name": "한국교원대학교",
     "grade": 7,
-    "capacity": 549,
-    "comment": "checked---------------------"
+    "capacity": 549
   },
   {
     "name": "서울과학기술대학교",
     "grade": 7,
-    "capacity": 2177,
-    "comment": "checked---------------------"
+    "capacity": 2177
   },
   {
     "name": "세종대학교",
     "grade": 7,
-    "capacity": 2332,
-    "comment": "checked---------------------"
+    "capacity": 2332
   },
   {
     "name": "단국대학교(죽전)",
     "grade": 7,
-    "capacity": 4632,
-    "comment": "checked---------------------"
+    "capacity": 4632
   },
   {
     "name": "한양대학교(에리카)",
     "grade": 8,
-    "capacity": 1838,
-    "comment": "checked---------------------"
+    "capacity": 1838
   },
   {
     "name": "성신여자대학교",
     "grade": 8,
-    "capacity": 2063,
-    "comment": "checked---------------------"
+    "capacity": 2063
   },
   {
     "name": "광운대학교",
     "grade": 8,
-    "capacity": 1687,
-    "comment": "checked---------------------"
+    "capacity": 1687
   },
   {
     "name": "가천대학교",
     "grade": 8,
-    "capacity": 3616,
-    "comment": "checked---------------------"
+    "capacity": 3616
   },
   {
     "name": "부산대학교",
     "grade": 8,
-    "capacity": 4311,
-    "comment": "checked---------------------"
+    "capacity": 4311
   },
   {
     "name": "경북대학교",
     "grade": 8,
-    "capacity": 5041,
-    "comment": "checked---------------------"
+    "capacity": 5041
   },
   {
     "name": "명지대학교",
     "grade": 8,
-    "capacity": 2527,
-    "comment": "checked---------------------"
+    "capacity": 2527
   },
   {
     "name": "한국항공대학교",
     "grade": 9,
-    "capacity": 830,
-    "comment": "checked---------------------"
+    "capacity": 830
   },
   {
     "name": "서울여자대학교",
     "grade": 9,
-    "capacity": 1592,
-    "comment": "checked---------------------"
+    "capacity": 1592
   },
   {
     "name": "전남대학교",
     "grade": 9,
-    "capacity": 4380,
-    "comment": "checked---------------------"
+    "capacity": 4380
   },
   {
     "name": "덕성여자대학교",
     "grade": 9,
-    "capacity": 1175,
-    "comment": "checked---------------------"
+    "capacity": 1175
   },
   {
     "name": "연세대학교(미래)",
     "grade": 9,
-    "capacity": 1332,
-    "comment": "checked---------------------"
+    "capacity": 1332
   },
   {
     "name": "가톨릭대학교",
     "grade": 9,
-    "capacity": 1797,
-    "comment": "checked---------------------"
+    "capacity": 1797
   },
   {
     "name": "상명대학교",
     "grade": 9,
-    "capacity": 2611,
-    "comment": "checked---------------------"
+    "capacity": 2611
   },
   {
     "name": "인천대학교",
     "grade": 9,
-    "capacity": 2516,
-    "comment": "checked---------------------"
+    "capacity": 2516
   },
   {
     "name": "동덕여자대학교",
     "grade": 10,
-    "capacity": 1513,
-    "comment": "checked---------------------"
+    "capacity": 1513
   },
   {
     "name": "삼육대학교",
     "grade": 10,
-    "capacity": 1121,
-    "comment": "checked---------------------"
+    "capacity": 1121
   },
   {
     "name": "경기대학교",
     "grade": 10,
-    "capacity": 2956,
-    "comment": "checked---------------------"
+    "capacity": 2956
   },
   {
     "name": "충남대학교",
     "grade": 11,
-    "capacity": 3652,
-    "comment": "checked---------------------"
+    "capacity": 3652
   },
   {
     "name": "차의과학대학교",
     "grade": 11,
-    "capacity": 475,
-    "comment": "checked---------------------"
+    "capacity": 475
   },
   {
     "name": "국립부경대학교",
     "grade": 11,
-    "capacity": 3338,
-    "comment": "checked---------------------"
+    "capacity": 3338
   },
   {
     "name": "건국대학교(글로컬)",
     "grade": 11,
-    "capacity": 1553,
-    "comment": "checked---------------------"
+    "capacity": 1553
   },
   {
     "name": "성공회대학교",
     "grade": 12,
-    "capacity": 504,
-    "comment": "checked---------------------"
+    "capacity": 504
   },
   {
     "name": "한성대학교",
     "grade": 12,
-    "capacity": 1463,
-    "comment": "checked---------------------"
+    "capacity": 1463
   },
   {
     "name": "명지대학교(용인)",
     "grade": 12,
-    "capacity": 2670,
-    "comment": "checked---------------------"
+    "capacity": 2670
   },
   {
     "name": "총신대학교",
     "grade": 12,
-    "capacity": 334,
-    "comment": "checked---------------------"
+    "capacity": 334
   },
   {
     "name": "한국공학대학교",
     "grade": 12,
-    "capacity": 1389,
-    "comment": "checked---------------------"
+    "capacity": 1389
   },
   {
     "name": "국립한국해양대학교",
     "grade": 12,
-    "capacity": 1372,
-    "comment": "checked---------------------"
+    "capacity": 1372
   },
   {
     "name": "을지대학교",
     "grade": 13,
-    "capacity": 1030,
-    "comment": "checked---------------------"
+    "capacity": 1030
   },
   {
     "name": "충북대학교",
     "grade": 13,
-    "capacity": 2963,
-    "comment": "checked---------------------"
+    "capacity": 2963
   },
   {
     "name": "강원대학교",
     "grade": 13,
-    "capacity": 4509,
-    "comment": "checked---------------------"
+    "capacity": 4509
   },
   {
     "name": "전북대학교",
     "grade": 13,
-    "capacity": 3944,
-    "comment": "checked---------------------"
+    "capacity": 3944
   },
   {
     "name": "고려대학교(세종)",
     "grade": 13,
-    "capacity": 1321,
-    "comment": "checked---------------------"
+    "capacity": 1321
   },
   {
     "name": "한경국립대학교",
     "grade": 13,
-    "capacity": 1271,
-    "comment": "checked---------------------"
+    "capacity": 1271
   },
   {
     "name": "영남대학교",
     "grade": 13,
-    "capacity": 4561,
-    "comment": "checked---------------------"
+    "capacity": 4561
   },
   {
     "name": "한동대학교",
     "grade": 13,
-    "capacity": 729,
-    "comment": "checked---------------------"
+    "capacity": 729
   },
   {
     "name": "한국기술교육대학교",
     "grade": 14,
-    "capacity": 836,
-    "comment": "checked---------------------"
+    "capacity": 836
   },
   {
     "name": "국립공주대학교",
     "grade": 14,
-    "capacity": 2815,
-    "comment": "checked---------------------"
+    "capacity": 2815
   },
   {
     "name": "단국대학교(천안)",
@@ -506,26 +442,22 @@
   {
     "name": "서경대학교",
     "grade": 14,
-    "capacity": 1275,
-    "comment": "checked---------------------"
+    "capacity": 1275
   },
   {
     "name": "순천향대학교",
     "grade": 14,
-    "capacity": 2358,
-    "comment": "checked---------------------"
+    "capacity": 2358
   },
   {
     "name": "한국교통대학교",
     "grade": 14,
-    "capacity": 1911,
-    "comment": "checked---------------------"
+    "capacity": 1911
   },
   {
     "name": "경상국립대학교",
     "grade": 14,
-    "capacity": 3032,
-    "comment": "checked---------------------"
+    "capacity": 3032
   },
   {
     "name": "청운대학교",
@@ -535,32 +467,27 @@
   {
     "name": "제주대학교",
     "grade": 15,
-    "capacity": 2175,
-    "comment": "checked---------------------"
+    "capacity": 2175
   },
   {
     "name": "동아대학교",
     "grade": 15,
-    "capacity": 4070,
-    "comment": "checked---------------------"
+    "capacity": 4070
   },
   {
     "name": "추계예술대학교",
     "grade": 15,
-    "capacity": 271,
-    "comment": "checked---------------------"
+    "capacity": 271
   },
   {
     "name": "수원대학교",
     "grade": 15,
-    "capacity": 2199,
-    "comment": "checked---------------------"
+    "capacity": 2199
   },
   {
     "name": "용인대학교",
     "grade": 16,
-    "capacity": 1262,
-    "comment": "checked---------------------"
+    "capacity": 1262
   },
   {
     "name": "중부대학교(고양)",
@@ -570,50 +497,42 @@
   {
     "name": "목포가톨릭대학교",
     "grade": 16,
-    "capacity": 120,
-    "comment": "checked---------------------"
+    "capacity": 120
   },
   {
     "name": "장로회신학대학교",
     "grade": 16,
-    "capacity": 150,
-    "comment": "checked---------------------"
+    "capacity": 150
   },
   {
     "name": "강남대학교",
     "grade": 16,
-    "capacity": 1491,
-    "comment": "checked---------------------"
+    "capacity": 1491
   },
   {
     "name": "한국체육대학교",
     "grade": 16,
-    "capacity": 535,
-    "comment": "checked---------------------"
+    "capacity": 535
   },
   {
     "name": "한세대학교",
     "grade": 16,
-    "capacity": 568,
-    "comment": "checked---------------------"
+    "capacity": 568
   },
   {
     "name": "국립순천대학교",
     "grade": 17,
-    "capacity": 1573,
-    "comment": "checked---------------------"
+    "capacity": 1573
   },
   {
     "name": "한림대학교",
     "grade": 17,
-    "capacity": 1715,
-    "comment": "checked---------------------"
+    "capacity": 1715
   },
   {
     "name": "성결대학교",
     "grade": 17,
-    "capacity": 1203,
-    "comment": "checked---------------------"
+    "capacity": 1203
   },
   {
     "name": "상명대학교(천안)",
@@ -623,224 +542,187 @@
   {
     "name": "한남대학교",
     "grade": 17,
-    "capacity": 2675,
-    "comment": "checked---------------------"
+    "capacity": 2675
   },
   {
     "name": "국립한밭대학교",
     "grade": 17,
-    "capacity": 1916,
-    "comment": "checked---------------------"
+    "capacity": 1916
   },
   {
     "name": "가톨릭꽃동네대학교",
     "grade": 17,
-    "capacity": 109,
-    "comment": "checked---------------------"
+    "capacity": 109
   },
   {
     "name": "백석대학교",
     "grade": 18,
-    "capacity": 2804,
-    "comment": "checked---------------------"
+    "capacity": 2804
   },
   {
     "name": "대진대학교",
     "grade": 18,
-    "capacity": 1703,
-    "comment": "checked---------------------"
+    "capacity": 1703
   },
   {
     "name": "한신대학교",
     "grade": 18,
-    "capacity": 1173,
-    "comment": "checked---------------------"
+    "capacity": 1173
   },
   {
     "name": "한서대학교",
     "grade": 18,
-    "capacity": 1581,
-    "comment": "checked---------------------"
+    "capacity": 1581
   },
   {
     "name": "협성대학교",
     "grade": 18,
-    "capacity": 1007,
-    "comment": "checked---------------------"
+    "capacity": 1007
   },
   {
     "name": "국립목포해양대학교",
     "grade": 18,
-    "capacity": 693,
-    "comment": "checked---------------------"
+    "capacity": 693
   },
   {
     "name": "안양대학교",
     "grade": 19,
-    "capacity": 1142,
-    "comment": "checked---------------------"
+    "capacity": 1142
   },
   {
     "name": "국립창원대학교",
     "grade": 19,
-    "capacity": 1738,
-    "comment": "checked---------------------"
+    "capacity": 1738
   },
   {
     "name": "예수대학교",
     "grade": 19,
-    "capacity": 125,
-    "comment": "checked---------------------"
+    "capacity": 125
   },
   {
     "name": "신경대학교",
     "grade": 19,
-    "capacity": 252,
-    "comment": "checked---------------------"
+    "capacity": 252
   },
   {
     "name": "중부대학교(충청)",
     "grade": 19,
-    "capacity": 1685,
-    "comment": "checked---------------------"
+    "capacity": 1685
   },
   {
     "name": "전주대학교",
     "grade": 19,
-    "capacity": 2521,
-    "comment": "checked---------------------"
+    "capacity": 2521
   },
   {
     "name": "건양대학교",
     "grade": 19,
-    "capacity": 1631,
-    "comment": "checked---------------------"
+    "capacity": 1631
   },
   {
     "name": "청주대학교",
     "grade": 19,
-    "capacity": 2632,
-    "comment": "checked---------------------"
+    "capacity": 2632
   },
   {
     "name": "나사렛대학교",
     "grade": 19,
-    "capacity": 1191,
-    "comment": "checked---------------------"
+    "capacity": 1191
   },
   {
     "name": "금강대학교",
     "grade": 20,
-    "capacity": 110,
-    "comment": "checked---------------------"
+    "capacity": 110
   },
   {
     "name": "계명대학교",
     "grade": 20,
-    "capacity": 4615,
-    "comment": "checked---------------------"
+    "capacity": 4615
   },
   {
     "name": "우송대학교",
     "grade": 20,
-    "capacity": 2013,
-    "comment": "checked---------------------"
+    "capacity": 2013
   },
   {
     "name": "울산대학교",
     "grade": 20,
-    "capacity": 2741,
-    "comment": "checked---------------------"
+    "capacity": 2741
   },
   {
     "name": "광주여자대학교",
     "grade": 20,
-    "capacity": 895,
-    "comment": "checked---------------------"
+    "capacity": 895
   },
   {
     "name": "호서대학교",
     "grade": 20,
-    "capacity": 2887,
-    "comment": "checked---------------------"
+    "capacity": 2887
   },
   {
     "name": "서울신학대학교",
     "grade": 20,
-    "capacity": 502,
-    "comment": "checked---------------------"
+    "capacity": 502
   },
   {
     "name": "조선대학교",
     "grade": 20,
-    "capacity": 4361,
-    "comment": "checked---------------------"
+    "capacity": 4361
   },
   {
     "name": "대전대학교",
     "grade": 20,
-    "capacity": 1812,
-    "comment": "checked---------------------"
+    "capacity": 1812
   },
   {
     "name": "국립안동대학교",
     "grade": 21,
-    "capacity": 1309,
-    "comment": "checked---------------------"
+    "capacity": 1309
   },
   {
     "name": "국립목포대학교",
     "grade": 21,
-    "capacity": 1484,
-    "comment": "checked---------------------"
+    "capacity": 1484
   },
   {
     "name": "김천대학교",
     "grade": 21,
-    "capacity": 634,
-    "comment": "checked---------------------"
+    "capacity": 634
   },
   {
     "name": "국립강릉원주대학교",
     "grade": 21,
-    "capacity": 1695,
-    "comment": "checked---------------------"
+    "capacity": 1695
   },
   {
     "name": "국립금오공과대학교",
     "grade": 21,
-    "capacity": 1208,
-    "comment": "checked---------------------"
+    "capacity": 1208
   },
   {
     "name": "서원대학교",
     "grade": 21,
-    "capacity": 1626,
-    "comment": "checked---------------------"
+    "capacity": 1626
   },
   {
     "name": "경성대학교",
     "grade": 21,
-    "capacity": 2748,
-    "comment": "checked---------------------"
+    "capacity": 2748
   },
   {
     "name": "강서대학교",
     "grade": 21,
-    "capacity": 277,
-    "comment": "checked---------------------"
+    "capacity": 277
   },
   {
     "name": "경남대학교",
     "grade": 21,
-    "capacity": 2050,
-    "comment": "checked---------------------"
+    "capacity": 2050
   },
   {
     "name": "원광대학교",
     "grade": 22,
-    "capacity": 2891,
-    "comment": "checked---------------------"
+    "capacity": 2891
   },
   {
     "name": "강원대학교(삼척)",
@@ -855,56 +737,47 @@
   {
     "name": "대구대학교",
     "grade": 22,
-    "capacity": 4850,
-    "comment": "checked---------------------"
+    "capacity": 4850
   },
   {
     "name": "목원대학교",
     "grade": 22,
-    "capacity": 1865,
-    "comment": "checked---------------------"
+    "capacity": 1865
   },
   {
     "name": "국립군산대학교",
     "grade": 22,
-    "capacity": 1739,
-    "comment": "checked---------------------"
+    "capacity": 1739
   },
   {
     "name": "한국성서대학교",
     "grade": 22,
-    "capacity": 221,
-    "comment": "checked---------------------"
+    "capacity": 221
   },
   {
     "name": "동의대학교",
     "grade": 22,
-    "capacity": 3595,
-    "comment": "checked---------------------"
+    "capacity": 3595
   },
   {
     "name": "대구가톨릭대학교",
     "grade": 22,
-    "capacity": 2468,
-    "comment": "checked---------------------"
+    "capacity": 2468
   },
   {
     "name": "평택대학교",
     "grade": 23,
-    "capacity": 862,
-    "comment": "checked---------------------"
+    "capacity": 862
   },
   {
     "name": "남부대학교",
     "grade": 23,
-    "capacity": 617,
-    "comment": "checked---------------------"
+    "capacity": 617
   },
   {
     "name": "광주대학교",
     "grade": 23,
-    "capacity": 1393,
-    "comment": "checked---------------------"
+    "capacity": 1393
   },
   {
     "name": "동국대학교(경주)",
@@ -914,68 +787,57 @@
   {
     "name": "세한대학교",
     "grade": 24,
-    "capacity": 915,
-    "comment": "checked---------------------"
+    "capacity": 915
   },
   {
     "name": "가톨릭관동대학교",
     "grade": 24,
-    "capacity": 1644,
-    "comment": "checked---------------------"
+    "capacity": 1644
   },
   {
     "name": "인제대학교",
     "grade": 24,
-    "capacity": 1703,
-    "comment": "checked---------------------"
+    "capacity": 1703
   },
   {
     "name": "한라대학교",
     "grade": 24,
-    "capacity": 880,
-    "comment": "checked---------------------"
+    "capacity": 880
   },
   {
     "name": "선문대학교",
     "grade": 24,
-    "capacity": 2050,
-    "comment": "checked---------------------"
+    "capacity": 2050
   },
   {
     "name": "동서대학교",
     "grade": 24,
-    "capacity": 2094,
-    "comment": "checked---------------------"
+    "capacity": 2094
   },
   {
     "name": "신한대학교",
     "grade": 24,
-    "capacity": 1459,
-    "comment": "checked---------------------"
+    "capacity": 1459
   },
   {
     "name": "세명대학교",
     "grade": 25,
-    "capacity": 1551,
-    "comment": "checked---------------------"
+    "capacity": 1551
   },
   {
     "name": "감리교신학대학교",
     "grade": 25,
-    "capacity": 192,
-    "comment": "checked---------------------"
+    "capacity": 192
   },
   {
     "name": "우석대학교",
     "grade": 25,
-    "capacity": 1726,
-    "comment": "checked---------------------"
+    "capacity": 1726
   },
   {
     "name": "부산외국어대학교",
     "grade": 25,
-    "capacity": 1470,
-    "comment": "checked---------------------"
+    "capacity": 1470
   },
   {
     "name": "호원대학교",
@@ -985,146 +847,122 @@
   {
     "name": "남서울대학교",
     "grade": 25,
-    "capacity": 2204,
-    "comment": "checked---------------------"
+    "capacity": 2204
   },
   {
     "name": "동양대학교",
     "grade": 25,
-    "capacity": 1010,
-    "comment": "checked---------------------"
+    "capacity": 1010
   },
   {
     "name": "중원대학교",
     "grade": 25,
-    "capacity": 758,
-    "comment": "checked---------------------"
+    "capacity": 758
   },
   {
     "name": "경남과학기술대학교",
     "grade": 26,
-    "capacity": 1129,
-    "comment": "checked---------------------"
+    "capacity": 1129
   },
   {
     "name": "신라대학교",
     "grade": 26,
-    "capacity": 1640,
-    "comment": "checked---------------------"
+    "capacity": 1640
   },
   {
     "name": "영산대학교(해운대)",
     "grade": 26,
-    "capacity": 720,
-    "comment": "checked---------------------"
+    "capacity": 720
   },
   {
     "name": "대구한의대학교",
     "grade": 26,
-    "capacity": 1456,
-    "comment": "checked---------------------"
+    "capacity": 1456
   },
   {
     "name": "수원가톨릭대학교",
     "grade": 26,
-    "capacity": 90,
-    "comment": "checked---------------------"
+    "capacity": 90
   },
   {
     "name": "신경주대학교",
     "grade": 26,
-    "capacity": 890,
-    "comment": "checked---------------------"
+    "capacity": 890
   },
   {
     "name": "동신대학교",
     "grade": 26,
-    "capacity": 1440,
-    "comment": "checked---------------------"
+    "capacity": 1440
   },
   {
     "name": "배재대학교",
     "grade": 26,
-    "capacity": 1798,
-    "comment": "checked---------------------"
+    "capacity": 1798
   },
   {
     "name": "고신대학교",
     "grade": 26,
-    "capacity": 784,
-    "comment": "checked---------------------"
+    "capacity": 784
   },
   {
     "name": "호남대학교",
     "grade": 27,
-    "capacity": 1566,
-    "comment": "checked---------------------"
+    "capacity": 1566
   },
   {
     "name": "가야대학교",
     "grade": 27,
-    "capacity": 440,
-    "comment": "checked---------------------"
+    "capacity": 440
   },
   {
     "name": "부산가톨릭대학교",
     "grade": 27,
-    "capacity": 705,
-    "comment": "checked---------------------"
+    "capacity": 705
   },
   {
     "name": "서울한영대학교",
     "grade": 27,
-    "capacity": 182,
-    "comment": "checked---------------------"
+    "capacity": 182
   },
   {
     "name": "경일대학교",
     "grade": 27,
-    "capacity": 1521,
-    "comment": "checked---------------------"
+    "capacity": 1521
   },
   {
     "name": "광주가톨릭대학교",
     "grade": 27,
-    "capacity": 40,
-    "comment": "checked---------------------"
+    "capacity": 40
   },
   {
     "name": "대전가톨릭대학교",
     "grade": 27,
-    "capacity": 40,
-    "comment": "checked---------------------"
+    "capacity": 40
   },
   {
     "name": "상지대학교",
     "grade": 28,
-    "capacity": 1666,
-    "comment": "checked---------------------"
+    "capacity": 1666
   },
   {
     "name": "한국국제대학교",
     "grade": 28,
-    "capacity": 664,
-    "comment": "checked---------------------"
+    "capacity": 664
   },
   {
     "name": "경운대학교",
     "grade": 28,
-    "capacity": 1184,
-    "comment": "checked---------------------"
+    "capacity": 1184
   },
   {
     "name": "동명대학교",
     "grade": 28,
-    "capacity": 1459,
-    "comment": "checked---------------------"
+    "capacity": 1459
   },
   {
     "name": "송원대학교",
     "grade": 28,
-    "capacity": 645,
-    "comment": "checked---------------------"
+    "capacity": 645
   },
   {
     "name": "청운대학교(홍성)",
@@ -1134,158 +972,132 @@
   {
     "name": "극동대학교",
     "grade": 28,
-    "capacity": 888,
-    "comment": "checked---------------------"
+    "capacity": 888
   },
   {
     "name": "대전신학대학교",
     "grade": 28,
-    "capacity": 32,
-    "comment": "checked---------------------"
+    "capacity": 32
   },
   {
     "name": "침례신학대학교",
     "grade": 28,
-    "capacity": 366,
-    "comment": "checked---------------------"
+    "capacity": 366
   },
   {
     "name": "영산대학교(양산)",
     "grade": 29,
-    "capacity": 611,
-    "comment": "checked---------------------"
+    "capacity": 611
   },
   {
     "name": "루터대학교",
     "grade": 29,
-    "capacity": 85,
-    "comment": "checked---------------------"
+    "capacity": 85
   },
   {
     "name": "서울기독대학교",
     "grade": 29,
-    "capacity": 138,
-    "comment": "checked---------------------"
+    "capacity": 138
   },
   {
     "name": "제주국제대학교",
     "grade": 29,
-    "capacity": 370,
-    "comment": "checked---------------------"
+    "capacity": 370
   },
   {
     "name": "창신대학교",
     "grade": 29,
-    "capacity": 345,
-    "comment": "checked---------------------"
+    "capacity": 345
   },
   {
     "name": "영산선학대학교",
     "grade": 29,
-    "capacity": 50,
-    "comment": "checked---------------------"
+    "capacity": 50
   },
   {
     "name": "한일장신대학교",
     "grade": 29,
-    "capacity": 219,
-    "comment": "checked---------------------"
+    "capacity": 219
   },
   {
     "name": "경동대학교",
     "grade": 29,
-    "capacity": 1555,
-    "comment": "checked---------------------"
+    "capacity": 1555
   },
   {
     "name": "위덕대학교",
     "grade": 29,
-    "capacity": 627,
-    "comment": "checked---------------------"
+    "capacity": 627
   },
   {
     "name": "초당대학교",
     "grade": 29,
-    "capacity": 717,
-    "comment": "checked---------------------"
+    "capacity": 717
   },
   {
     "name": "아세아연합신학대학교",
     "grade": 30,
-    "capacity": 186,
-    "comment": "checked---------------------"
+    "capacity": 186
   },
   {
     "name": "광신대학교",
     "grade": 30,
-    "capacity": 105,
-    "comment": "checked---------------------"
+    "capacity": 105
   },
   {
     "name": "한려대학교",
     "grade": 30,
-    "capacity": 316,
-    "comment": "checked---------------------"
+    "capacity": 316
   },
   {
     "name": "호남신학대학교",
     "grade": 30,
-    "capacity": 137,
-    "comment": "checked---------------------"
+    "capacity": 137
   },
   {
     "name": "유원대학교",
     "grade": 30,
-    "capacity": 982,
-    "comment": "checked---------------------"
+    "capacity": 982
   },
   {
     "name": "칼빈대학교",
     "grade": 30,
-    "capacity": 91,
-    "comment": "checked---------------------"
+    "capacity": 91
   },
   {
     "name": "서울장신대학교",
     "grade": 30,
-    "capacity": 113,
-    "comment": "checked---------------------"
+    "capacity": 113
   },
   {
     "name": "중앙승가대학교",
     "grade": 30,
-    "capacity": 122,
-    "comment": "checked---------------------"
+    "capacity": 122
   },
   {
     "name": "부산장신대학교",
     "grade": 30,
-    "capacity": 49,
-    "comment": "checked---------------------"
+    "capacity": 49
   },
   {
     "name": "대신대학교",
     "grade": 30,
-    "capacity": 116,
-    "comment": "checked---------------------"
+    "capacity": 116
   },
   {
     "name": "영남신학대학교",
     "grade": 30,
-    "capacity": 115,
-    "comment": "checked---------------------"
+    "capacity": 115
   },
   {
     "name": "대구예술대학교",
     "grade": 30,
-    "capacity": 300,
-    "comment": "checked---------------------"
+    "capacity": 300
   },
   {
     "name": "예원예술대학교",
     "grade": 30,
-    "capacity": 307,
-    "comment": "checked---------------------"
+    "capacity": 307
   },
   {
     "name": "한국방송통신대학교",

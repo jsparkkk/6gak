@@ -46,7 +46,7 @@
         어떤 내용이라도 환영합니다. 디자인이 별로여도 메일 보내주세요. 더 정교한 서비스를 만들 수
         있도록 조언 많이 보내주세요.
         <div class="bg-gray-100 p-4 rounded-lg text-xs text-gray-500 mt-4">
-          데이터 출처: 통계청,국세청 등<br />
+          데이터 출처: 통계청,국세청통계포털 등<br />
           제작자 이메일: contact@6gak.com
         </div>
       </div>
