@@ -445,7 +445,8 @@ const emit = defineEmits([
 const toTopPercent = (score) => {
   if (score == null) return 0
   const top = 100 - score
-  return Math.max(0.1, top)
+  // 정수 표기시 최소 1%는 나오도록 설정
+  return Math.floor(Math.max(1, top))
 }
 
 // ⚡ Flash State & Trigger Logic
@@ -546,10 +547,12 @@ watch(
   () => bmiAnalysis.value,
   (val) => {
     if (val && val.percentile != null) {
-      let graphScore = 100 - val.percentile
-      graphScore = Math.max(0, graphScore)
-      emit('update-bmi', { percentile: graphScore })
-      triggerFlash('bmi') // ⚡
+      // ❌ 삭제: let graphScore = 100 - val.percentile
+
+      // ✅ 수정: bmiUtils에서 이미 '건강 점수(100점 만점)'로 계산해오므로 그대로 전송
+      emit('update-bmi', { percentile: val.percentile })
+
+      triggerFlash('bmi')
     }
   },
   { deep: true },
