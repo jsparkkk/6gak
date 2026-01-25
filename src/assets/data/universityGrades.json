@@ -121,7 +121,7 @@
     "universities": [
       { "name": "충남대학교", "capacity": 3435 },
       { "name": "차의과학대학교", "capacity": 475 },
-      { "name": "부경대학교", "capacity": 3278 },
+      { "name": "국립부경대학교", "capacity": 3278 },
       { "name": "건국대학교(글로컬)", "capacity": 1553 }
     ]
   },
@@ -133,7 +133,7 @@
       { "name": "명지대학교(용인)", "capacity": 2670 },
       { "name": "총신대학교", "capacity": 334 },
       { "name": "한국산업기술대학교", "capacity": 1389 },
-      { "name": "한국해양대학교", "capacity": 1440 }
+      { "name": "국립한국해양대학교", "capacity": 1440 }
     ]
   },
   {
@@ -144,7 +144,7 @@
       { "name": "강원대학교", "capacity": 4509 },
       { "name": "전북대학교", "capacity": 3829 },
       { "name": "고려대학교(세종)", "capacity": 1321 },
-      { "name": "한경대학교", "capacity": 1212 },
+      { "name": "한경국립대학교", "capacity": 1212 },
       { "name": "영남대학교", "capacity": 4561 },
       { "name": "한동대학교", "capacity": 729 }
     ]
@@ -153,12 +153,12 @@
     "grade": 14,
     "universities": [
       { "name": "한국기술교육대학교", "capacity": 836 },
-      { "name": "공주대학교", "capacity": 2734 },
+      { "name": "국립공주대학교", "capacity": 2734 },
       { "name": "단국대학교(천안)", "capacity": 0 },
       { "name": "서경대학교", "capacity": 1275 },
       { "name": "순천향대학교", "capacity": 2358 },
       { "name": "한국교통대학교", "capacity": 1911 },
-      { "name": "경상대학교", "capacity": 3037 }
+      { "name": "경상국립대학교", "capacity": 3037 }
     ]
   },
   {
@@ -186,12 +186,12 @@
   {
     "grade": 17,
     "universities": [
-      { "name": "순천대학교", "capacity": 1601 },
+      { "name": "국립순천대학교", "capacity": 1601 },
       { "name": "한림대학교", "capacity": 1715 },
       { "name": "성결대학교", "capacity": 1203 },
       { "name": "상명대학교(천안)", "capacity": 0 },
       { "name": "한남대학교", "capacity": 2675 },
-      { "name": "한밭대학교", "capacity": 1852 },
+      { "name": "국립한밭대학교", "capacity": 1852 },
       { "name": "꽃동네대학교", "capacity": 109 }
     ]
   },
@@ -203,14 +203,14 @@
       { "name": "한신대학교", "capacity": 1173 },
       { "name": "한서대학교", "capacity": 1581 },
       { "name": "협성대학교", "capacity": 1007 },
-      { "name": "목포해양대학교", "capacity": 693 }
+      { "name": "국립목포해양대학교", "capacity": 693 }
     ]
   },
   {
     "grade": 19,
     "universities": [
       { "name": "안양대학교", "capacity": 1142 },
-      { "name": "창원대학교", "capacity": 1763 },
+      { "name": "국립창원대학교", "capacity": 1763 },
       { "name": "예수대학교", "capacity": 125 },
       { "name": "신경대학교", "capacity": 252 },
       { "name": "중부대학교(충청)", "capacity": 1945 },
@@ -237,11 +237,11 @@
   {
     "grade": 21,
     "universities": [
-      { "name": "안동대학교", "capacity": 1468 },
-      { "name": "목포대학교", "capacity": 1581 },
+      { "name": "국립안동대학교", "capacity": 1468 },
+      { "name": "국립목포대학교", "capacity": 1581 },
       { "name": "김천대학교", "capacity": 691 },
-      { "name": "강릉원주대학교", "capacity": 1833 },
-      { "name": "금오공과대학교", "capacity": 1208 },
+      { "name": "국립강릉원주대학교", "capacity": 1833 },
+      { "name": "국립금오공과대학교", "capacity": 1208 },
       { "name": "서원대학교", "capacity": 1626 },
       { "name": "경성대학교", "capacity": 2748 },
       { "name": "강서대학교", "capacity": 278 }
@@ -255,7 +255,7 @@
       { "name": "전남대학교(여수)", "capacity": 0 },
       { "name": "대구대학교", "capacity": 4070 },
       { "name": "목원대학교", "capacity": 1865 },
-      { "name": "군산대학교", "capacity": 1739 },
+      { "name": "국립군산대학교", "capacity": 1739 },
       { "name": "한국성서대학교", "capacity": 221 },
       { "name": "동의대학교", "capacity": 3595 },
       { "name": "대구가톨릭대학교", "capacity": 2865 }
