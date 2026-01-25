@@ -1,6 +1,12 @@
 <template>
   <section class="bg-white rounded-xl shadow-sm p-4 mb-4">
-    <h2 class="text-sm font-semibold text-gray-700 mb-2">능력치 등급표</h2>
+    <div class="flex items-end gap-2 mb-2">
+      <h2 class="text-sm font-semibold text-gray-700">능력치 등급표</h2>
+      <span v-if="demographicLabel" class="text-[11px] text-gray-400 font-normal pb-0.5">
+        (기준: {{ demographicLabel }})
+      </span>
+    </div>
+
     <table class="w-full text-sm text-center border border-gray-200 table-fixed">
       <thead class="bg-gray-50 text-gray-500">
         <tr>
@@ -171,7 +177,7 @@
                 :to="heightGrade"
                 :precision="0"
                 :duration="countDuration"
-              />
+              />등급
             </span>
             <span v-else>-</span>
           </td>
@@ -207,7 +213,7 @@
                 :to="educationResult.grade"
                 :precision="0"
                 :duration="countDuration"
-              />
+              />등급
             </span>
             <span v-else>-</span>
           </td>
@@ -222,7 +228,7 @@
                 :to="salaryGrade"
                 :precision="0"
                 :duration="countDuration"
-              />
+              />등급
             </span>
             <span v-else>-</span>
           </td>
@@ -237,7 +243,7 @@
                 :to="jobGrade"
                 :precision="0"
                 :duration="countDuration"
-              />
+              />등급
             </span>
             <span v-else>-</span>
           </td>
@@ -252,7 +258,7 @@
                 :to="assetGrade"
                 :precision="0"
                 :duration="countDuration"
-              />
+              />등급
             </span>
             <span v-else>-</span>
           </td>
@@ -266,7 +272,6 @@
             :class="{ 'animate-flash': flashFlags.height }"
           >
             <div v-if="heightPercentile != null" class="flex flex-col items-center leading-none">
-              <span class="text-[10px] text-gray-600 mb-0.5"></span>
               <span class="font-bold text-gray-800">
                 <CountUp
                   class="font-bold text-gray-800"
@@ -287,7 +292,6 @@
               v-if="bmiAnalysis?.percentile != null"
               class="flex flex-col items-center leading-none"
             >
-              <span class="text-[10px] text-gray-600 mb-0.5"></span>
               <span class="font-bold text-gray-800">
                 <CountUp
                   class="font-bold text-gray-800"
@@ -308,7 +312,6 @@
               v-if="educationResult?.percentile != null"
               class="flex flex-col items-center leading-none"
             >
-              <span class="text-[10px] text-gray-600 mb-0.5"></span>
               <span class="font-bold text-gray-800">
                 <CountUp
                   class="font-bold text-gray-800"
@@ -326,7 +329,6 @@
             :class="{ 'animate-flash': flashFlags.salary }"
           >
             <div v-if="salaryPercentile != null" class="flex flex-col items-center leading-none">
-              <span class="text-[10px] text-gray-600 mb-0.5"></span>
               <span class="font-bold text-gray-800">
                 <CountUp
                   class="font-bold text-gray-800"
@@ -344,7 +346,6 @@
             :class="{ 'animate-flash': flashFlags.job }"
           >
             <div v-if="jobPercentile != null" class="flex flex-col items-center leading-none">
-              <span class="text-[10px] text-gray-600 mb-0.5"></span>
               <span class="font-bold text-gray-800">
                 <CountUp
                   class="font-bold text-gray-800"
@@ -362,7 +363,6 @@
             :class="{ 'animate-flash': flashFlags.asset }"
           >
             <div v-if="assetPercentile != null" class="flex flex-col items-center leading-none">
-              <span class="text-[10px] text-gray-600 mb-0.5"></span>
               <span class="font-bold text-gray-800">
                 <CountUp
                   class="font-bold text-gray-800"
@@ -394,16 +394,14 @@
       <div class="text-[11px] text-gray-500 space-y-1 leading-snug">
         <p>
           등급은 수능 등급제를 따릅니다.
-          <span class="text-gray-400 font-normal"
-            >[1등급(~4%), 2등급(~11%), 3등급(~23%) ... ... ]</span
-          >
+          <span class="text-gray-400 font-normal">[1등급(~4%), 2등급(~11%), 3등급(~23%) ... ]</span>
         </p>
-        <p>백분위 또한 수능 성적표의 백분위(하위 백분위 개념)를 따릅니다. 즉 높을수록 좋은 것.</p>
-        <p class="text-gray-400 font-normal">(ex1. 백분위 98 -> 상위 2% -> 100명 중 2등)</p>
-        <p class="text-gray-400 font-normal">(ex2. 백분위 32 -> 상위 68% -> 100명 중 68등)</p>
-        <p class="text-gray-400 font-normal">(ex3. 백분위 3 -> 상위 97% -> 100명 중 97등)</p>
+        <p>
+          백분위는 100명 중 등수를 나타냅니다.
+          <span class="text-gray-400 font-normal">(ex. 상위 1%의 경우 100명 중 1등을 의미)</span>
+        </p>
         <p class="text-[10px] text-gray-400 pl-1 border-l-2 border-gray-200 mt-1">
-          * 단, 비만 여부 백분위의 경우 구간별로 서열 없이 같은 백분위를 가집니다.
+          * 단, 비만 여부 백분위는 건강 점수(100점 만점)로 표기되며, 등급 내 서열이 없습니다.
         </p>
         <p class="text-[12px] font-bold">
           스크롤을 내려 하단으로 가시면 해설과 근거가 자세하게 서술되어 있습니다.
@@ -424,7 +422,6 @@ import { getSalaryPercentile } from '@/utils/salaryPercentile'
 import { getJobPercentileFromSelection } from '@/utils/jobPercentile'
 import { percentileForAgeAndAsset } from '@/utils/assetUtils'
 
-// ⏱️ 카운팅 속도 (ms)
 const countDuration = 3000
 
 const props = defineProps({
@@ -442,14 +439,21 @@ const emit = defineEmits([
   'update-asset',
 ])
 
+// 🔥 [추가] 기준 성별/연령대 라벨
+const demographicLabel = computed(() => {
+  if (!props.gender || !props.age) return ''
+  const g = props.gender === 'male' ? '남성' : '여성'
+  const start = Math.floor(props.age / 5) * 5
+  const end = start + 4
+  return `${start}~${end}세 ${g}`
+})
+
 const toTopPercent = (score) => {
   if (score == null) return 0
   const top = 100 - score
-  // 정수 표기시 최소 1%는 나오도록 설정
   return Math.floor(Math.max(1, top))
 }
 
-// ⚡ Flash State & Trigger Logic
 const flashFlags = reactive({
   height: false,
   bmi: false,
@@ -463,14 +467,12 @@ const triggerFlash = (key) => {
   flashFlags[key] = false
   setTimeout(() => {
     flashFlags[key] = true
-    // 애니메이션 시간(2s)에 맞춰서 플래그 끄기
     setTimeout(() => {
       flashFlags[key] = false
     }, 2000)
   }, 10)
 }
 
-// --- Computed Properties ---
 const heightPercentile = computed(() => {
   const h = props.ability?.height
   const g = props.gender
@@ -534,24 +536,19 @@ const assetGrade = computed(() =>
   assetPercentile.value != null ? percentileToGrade(assetPercentile.value) : null,
 )
 
-// --- Watchers (Emit & Trigger Flash) ---
-
+// --- Watchers ---
 watch(heightPercentile, (p) => {
   if (p != null) {
     emit('update-height', { percentile: p })
-    triggerFlash('height') // ⚡
+    triggerFlash('height')
   }
 })
 
 watch(
   () => bmiAnalysis.value,
   (val) => {
-    if (val && val.percentile != null) {
-      // ❌ 삭제: let graphScore = 100 - val.percentile
-
-      // ✅ 수정: bmiUtils에서 이미 '건강 점수(100점 만점)'로 계산해오므로 그대로 전송
-      emit('update-bmi', { percentile: val.percentile })
-
+    if (val && val.score != null) {
+      emit('update-bmi', { percentile: val.score })
       triggerFlash('bmi')
     }
   },
@@ -563,7 +560,7 @@ watch(
   (p) => {
     if (p != null) {
       emit('update-education', { percentile: p })
-      triggerFlash('education') // ⚡
+      triggerFlash('education')
     }
   },
 )
@@ -571,48 +568,47 @@ watch(
 watch(salaryPercentile, (p) => {
   if (p != null) {
     emit('update-salary', { percentile: p })
-    triggerFlash('salary') // ⚡
+    triggerFlash('salary')
   }
 })
 
 watch(jobPercentile, (p) => {
   if (p != null) {
     emit('update-job', { percentile: p })
-    triggerFlash('job') // ⚡
+    triggerFlash('job')
   }
 })
 
 watch(assetPercentile, (p) => {
   if (p != null) {
     emit('update-asset', { percentile: p })
-    triggerFlash('asset') // ⚡
+    triggerFlash('asset')
   }
 })
 </script>
 
 <style scoped>
-/* ⚡ Flash 애니메이션 */
 .animate-flash {
-  /* 플래시 지속시간 2초 */
   animation: flash 2s ease-out;
 }
 
 @keyframes flash {
   0% {
     background-color: rgba(219, 234, 254, 0.7);
-  } /* blue-100 */
+  }
   100% {
     background-color: transparent;
   }
 }
 
-/* ✅ 체크 아이콘 등장 애니메이션 (Pop) */
 .check-pop-enter-active {
   animation: check-pop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
 .check-pop-leave-active {
   transition: opacity 0.2s ease;
 }
+
 .check-pop-leave-to {
   opacity: 0;
 }
