@@ -177,7 +177,7 @@
                 :to="heightGrade"
                 :precision="0"
                 :duration="countDuration"
-              />등급
+              />
             </span>
             <span v-else>-</span>
           </td>
@@ -213,7 +213,7 @@
                 :to="educationResult.grade"
                 :precision="0"
                 :duration="countDuration"
-              />등급
+              />
             </span>
             <span v-else>-</span>
           </td>
@@ -228,7 +228,7 @@
                 :to="salaryGrade"
                 :precision="0"
                 :duration="countDuration"
-              />등급
+              />
             </span>
             <span v-else>-</span>
           </td>
@@ -243,7 +243,7 @@
                 :to="jobGrade"
                 :precision="0"
                 :duration="countDuration"
-              />등급
+              />
             </span>
             <span v-else>-</span>
           </td>
@@ -258,7 +258,7 @@
                 :to="assetGrade"
                 :precision="0"
                 :duration="countDuration"
-              />등급
+              />
             </span>
             <span v-else>-</span>
           </td>
@@ -272,6 +272,7 @@
             :class="{ 'animate-flash': flashFlags.height }"
           >
             <div v-if="heightPercentile != null" class="flex flex-col items-center leading-none">
+              <span class="text-[10px] text-gray-600 mb-0.5"></span>
               <span class="font-bold text-gray-800">
                 <CountUp
                   class="font-bold text-gray-800"
@@ -292,6 +293,7 @@
               v-if="bmiAnalysis?.percentile != null"
               class="flex flex-col items-center leading-none"
             >
+              <span class="text-[10px] text-gray-600 mb-0.5"></span>
               <span class="font-bold text-gray-800">
                 <CountUp
                   class="font-bold text-gray-800"
@@ -312,6 +314,7 @@
               v-if="educationResult?.percentile != null"
               class="flex flex-col items-center leading-none"
             >
+              <span class="text-[10px] text-gray-600 mb-0.5"></span>
               <span class="font-bold text-gray-800">
                 <CountUp
                   class="font-bold text-gray-800"
@@ -329,6 +332,7 @@
             :class="{ 'animate-flash': flashFlags.salary }"
           >
             <div v-if="salaryPercentile != null" class="flex flex-col items-center leading-none">
+              <span class="text-[10px] text-gray-600 mb-0.5"></span>
               <span class="font-bold text-gray-800">
                 <CountUp
                   class="font-bold text-gray-800"
@@ -346,6 +350,7 @@
             :class="{ 'animate-flash': flashFlags.job }"
           >
             <div v-if="jobPercentile != null" class="flex flex-col items-center leading-none">
+              <span class="text-[10px] text-gray-600 mb-0.5"></span>
               <span class="font-bold text-gray-800">
                 <CountUp
                   class="font-bold text-gray-800"
@@ -363,6 +368,7 @@
             :class="{ 'animate-flash': flashFlags.asset }"
           >
             <div v-if="assetPercentile != null" class="flex flex-col items-center leading-none">
+              <span class="text-[10px] text-gray-600 mb-0.5"></span>
               <span class="font-bold text-gray-800">
                 <CountUp
                   class="font-bold text-gray-800"
@@ -394,14 +400,16 @@
       <div class="text-[11px] text-gray-500 space-y-1 leading-snug">
         <p>
           등급은 수능 등급제를 따릅니다.
-          <span class="text-gray-400 font-normal">[1등급(~4%), 2등급(~11%), 3등급(~23%) ... ]</span>
+          <span class="text-gray-400 font-normal"
+            >[1등급(~4%), 2등급(~11%), 3등급(~23%) ... ... ]</span
+          >
         </p>
-        <p>
-          백분위는 100명 중 등수를 나타냅니다.
-          <span class="text-gray-400 font-normal">(ex. 상위 1%의 경우 100명 중 1등을 의미)</span>
-        </p>
+        <p>백분위 또한 수능 성적표의 백분위(하위 백분위 개념)를 따릅니다. 즉 높을수록 좋은 것.</p>
+        <p class="text-gray-400 font-normal">(ex1. 백분위 98 -> 상위 2% -> 100명 중 2등)</p>
+        <p class="text-gray-400 font-normal">(ex2. 백분위 32 -> 상위 68% -> 100명 중 68등)</p>
+        <p class="text-gray-400 font-normal">(ex3. 백분위 3 -> 상위 97% -> 100명 중 97등)</p>
         <p class="text-[10px] text-gray-400 pl-1 border-l-2 border-gray-200 mt-1">
-          * 단, 비만 여부 백분위는 건강 점수(100점 만점)로 표기되며, 등급 내 서열이 없습니다.
+          * 단, 비만 여부 백분위의 경우 구간별로 서열 없이 같은 백분위를 가집니다.
         </p>
         <p class="text-[12px] font-bold">
           스크롤을 내려 하단으로 가시면 해설과 근거가 자세하게 서술되어 있습니다.
@@ -451,7 +459,7 @@ const demographicLabel = computed(() => {
 const toTopPercent = (score) => {
   if (score == null) return 0
   const top = 100 - score
-  return Math.floor(Math.max(1, top))
+  return Math.max(0.1, top)
 }
 
 const flashFlags = reactive({
@@ -547,8 +555,9 @@ watch(heightPercentile, (p) => {
 watch(
   () => bmiAnalysis.value,
   (val) => {
-    if (val && val.score != null) {
-      emit('update-bmi', { percentile: val.score })
+    if (val && val.percentile != null) {
+      // ✅ [수정완료] BMI는 이미 100점 만점 기준이므로 그대로 전송 (100 - 삭제)
+      emit('update-bmi', { percentile: val.percentile })
       triggerFlash('bmi')
     }
   },
