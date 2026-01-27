@@ -1,16 +1,42 @@
 <template>
-  <section class="bg-white rounded-xl shadow-sm p-4 mb-4">
-    <h2 class="text-sm font-semibold text-gray-700 mb-2">능력치 육각형</h2>
-    <canvas ref="radarCanvas" />
-    <p class="mt-3 text-center text-sm text-gray-600">
-      종합 점수(육각형 내부의 넓이): <span class="font-bold text-blue-600">{{ totalScore }}</span
-      >점
-    </p>
+  <section
+    class="bg-white rounded-2xl shadow-lg p-6 mb-6 border border-gray-100 relative overflow-hidden"
+  >
+    <div
+      class="absolute top-0 right-0 w-32 h-32 bg-indigo-50 rounded-bl-full -z-10 opacity-50"
+    ></div>
+
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="text-lg font-bold text-gray-800 flex items-center gap-2">
+        <span class="w-1.5 h-6 bg-indigo-600 rounded-full"></span>
+        Stats Overview
+      </h2>
+    </div>
+
+    <div class="relative w-full aspect-square max-w-[400px] mx-auto my-2">
+      <canvas ref="radarCanvas" />
+    </div>
+
+    <div class="mt-4 pt-4 border-t border-gray-100 text-center">
+      <p class="text-xs text-gray-400 font-medium mb-1 tracking-wider">6GAK SCORE</p>
+      <div class="flex items-baseline justify-center gap-1">
+        <span
+          class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500"
+        >
+          <CountUp :to="scaledTotalScore" :precision="0" :duration="2000" />
+        </span>
+        <span class="text-gray-400 font-medium text-sm">/ 10,000</span>
+      </div>
+      <p class="text-[11px] text-gray-400 mt-2">
+        * 종합 능력치 환산 점수 (색칠된 내부 면적 넓이, 최대 10,000의 값을 가짐)
+      </p>
+    </div>
   </section>
 </template>
 
 <script setup>
 import { onMounted, watch, ref, computed } from 'vue'
+import CountUp from '@/components/common/CountUp.vue'
 import {
   Chart,
   RadarController,
@@ -35,30 +61,18 @@ Chart.register(
 const props = defineProps({
   percentiles: {
     type: Object,
-    required: true, // { height, bmi, education, salary, job, assets } (0~100)
+    required: true,
   },
 })
 
-const scores = computed(() => [
-  norm(props.percentiles.height),
-  norm(props.percentiles.bmi),
-  norm(props.percentiles.education),
-  norm(props.percentiles.salary),
-  norm(props.percentiles.assets),
-  norm(props.percentiles.job),
-])
-
-const round2 = (x) => Math.round(Number(x) * 100) / 100
-const norm = (x) => {
-  const v = Number(x)
-  if (!Number.isFinite(v)) return 0
-  return round2(Math.min(100, Math.max(0, v)))
-}
+// 차트 인스턴스
 const radarCanvas = ref(null)
 let radarChart = null
 
-const labels = ['키', 'BMI', '학벌', '연봉', '자산', '직업']
+// 라벨 순서 (시계 방향)
+const labels = ['키', '체중(BMI)', '학벌', '연봉', '자산', '직업']
 
+// 데이터 추출 헬퍼
 function getScoreArray(percentiles) {
   return [
     percentiles.height ?? 0,
@@ -70,78 +84,115 @@ function getScoreArray(percentiles) {
   ]
 }
 
+// 넓이 계산 (육각형 내부 면적)
 function calculateRadarArea(scoreArr) {
-  const r = 100
-  const angles = scoreArr.map((_, i, arr) => (2 * Math.PI * i) / arr.length)
-  const coords = scoreArr.map((val, i) => {
-    const rad = (val / r) * 100
-    return [rad * Math.cos(angles[i]), rad * Math.sin(angles[i])]
-  })
-
+  const sin60 = Math.sin(Math.PI / 3)
   let area = 0
-  for (let i = 0; i < coords.length; i++) {
-    const [x1, y1] = coords[i]
-    const [x2, y2] = coords[(i + 1) % coords.length]
-    area += (x1 * y2 - x2 * y1) / 2
+
+  for (let i = 0; i < scoreArr.length; i++) {
+    const current = scoreArr[i]
+    const next = scoreArr[(i + 1) % scoreArr.length]
+    area += 0.5 * current * next * sin60
   }
-  return Math.abs(area.toFixed(0))
+
+  return area
 }
 
-const totalScore = ref(0)
+// 10,000점 만점 기준 최대 넓이 상수 (반지름 100인 정육각형 넓이)
+const MAX_AREA = 25980.76
+
+const rawTotalArea = ref(0)
+
+// 10,000점으로 환산된 점수 (Computed)
+const scaledTotalScore = computed(() => {
+  const score = (rawTotalArea.value / MAX_AREA) * 10000
+  // 정수 반환 보장
+  return Math.round(Math.max(0, Math.min(10000, score)))
+})
 
 onMounted(() => {
-  radarChart = new Chart(radarCanvas.value, {
+  const ctx = radarCanvas.value.getContext('2d')
+
+  radarChart = new Chart(ctx, {
     type: 'radar',
     data: {
       labels,
       datasets: [
         {
-          label: '능력치 점수',
+          label: '내 능력치',
           data: getScoreArray(props.percentiles),
-          backgroundColor: 'rgba(59,130,246,0.2)',
-          borderColor: 'rgba(59,130,246,1)',
+          backgroundColor: 'rgba(79, 70, 229, 0.2)',
+          borderColor: 'rgba(79, 70, 229, 1)',
           borderWidth: 2,
-          pointBackgroundColor: 'rgba(59,130,246,1)',
+          pointBackgroundColor: '#ffffff',
+          pointBorderColor: 'rgba(79, 70, 229, 1)',
+          pointBorderWidth: 2,
+          pointRadius: 3,
+          pointHoverRadius: 5,
         },
       ],
     },
     options: {
       responsive: true,
-      maintainAspectRatio: true, // ← 중요: 무한 공백 방지
+      maintainAspectRatio: true,
+      animation: {
+        duration: 1500,
+        easing: 'easeOutQuart',
+      },
       scales: {
         r: {
           min: 0,
           max: 100,
+          beginAtZero: true,
           ticks: {
+            display: false,
             stepSize: 20,
-            color: '#999',
-            backdropColor: 'transparent',
+            maxTicksLimit: 6,
+          },
+          grid: {
+            color: 'rgba(0, 0, 0, 0.05)',
+            circular: false,
+          },
+          angleLines: {
+            color: 'rgba(0, 0, 0, 0.05)',
           },
           pointLabels: {
             font: {
               size: 12,
+              family: "'Pretendard', sans-serif",
               weight: 'bold',
             },
-            color: '#333',
-          },
-          grid: {
-            color: '#ccc',
+            color: '#4B5563',
+            padding: 10,
           },
         },
       },
       plugins: {
         legend: { display: false },
+        tooltip: {
+          backgroundColor: 'rgba(17, 24, 39, 0.9)',
+          titleFont: { size: 13 },
+          bodyFont: { size: 13 },
+          padding: 10,
+          cornerRadius: 8,
+          callbacks: {
+            label: (context) => ` 상위 ${context.raw}% 점수`,
+          },
+        },
       },
     },
   })
-  totalScore.value = calculateRadarArea(getScoreArray(props.percentiles))
+
+  // 초기 점수 계산
+  rawTotalArea.value = calculateRadarArea(getScoreArray(props.percentiles))
 })
 
 watch(
   () => props.percentiles,
   (newScores) => {
     const data = getScoreArray(newScores)
-    totalScore.value = calculateRadarArea(data)
+    rawTotalArea.value = calculateRadarArea(data)
+
     if (radarChart) {
       radarChart.data.datasets[0].data = data
       radarChart.update()
@@ -154,6 +205,6 @@ watch(
 <style scoped>
 canvas {
   width: 100% !important;
-  max-width: 100%;
+  height: auto !important;
 }
 </style>

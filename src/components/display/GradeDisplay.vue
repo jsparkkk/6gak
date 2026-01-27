@@ -11,12 +11,11 @@
       <thead class="bg-gray-50 text-gray-500">
         <tr>
           <th class="py-2">항목</th>
-
           <th class="py-2">
             <div class="flex items-center justify-center gap-1">
               키
-              <Transition name="check-pop">
-                <div
+              <Transition name="check-pop"
+                ><div
                   v-if="heightGrade"
                   class="flex items-center justify-center w-3.5 h-3.5 bg-green-500 rounded-full shadow-sm"
                 >
@@ -31,17 +30,15 @@
                       d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                       clip-rule="evenodd"
                     />
-                  </svg>
-                </div>
-              </Transition>
+                  </svg></div
+              ></Transition>
             </div>
           </th>
-
           <th class="py-2">
             <div class="flex items-center justify-center gap-1">
               비만여부
-              <Transition name="check-pop">
-                <div
+              <Transition name="check-pop"
+                ><div
                   v-if="bmiAnalysis"
                   class="flex items-center justify-center w-3.5 h-3.5 bg-green-500 rounded-full shadow-sm"
                 >
@@ -56,17 +53,15 @@
                       d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                       clip-rule="evenodd"
                     />
-                  </svg>
-                </div>
-              </Transition>
+                  </svg></div
+              ></Transition>
             </div>
           </th>
-
           <th class="py-2">
             <div class="flex items-center justify-center gap-1">
               학벌
-              <Transition name="check-pop">
-                <div
+              <Transition name="check-pop"
+                ><div
                   v-if="educationResult?.grade"
                   class="flex items-center justify-center w-3.5 h-3.5 bg-green-500 rounded-full shadow-sm"
                 >
@@ -81,17 +76,15 @@
                       d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                       clip-rule="evenodd"
                     />
-                  </svg>
-                </div>
-              </Transition>
+                  </svg></div
+              ></Transition>
             </div>
           </th>
-
           <th class="py-2">
             <div class="flex items-center justify-center gap-1">
               연봉
-              <Transition name="check-pop">
-                <div
+              <Transition name="check-pop"
+                ><div
                   v-if="salaryGrade"
                   class="flex items-center justify-center w-3.5 h-3.5 bg-green-500 rounded-full shadow-sm"
                 >
@@ -106,17 +99,15 @@
                       d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                       clip-rule="evenodd"
                     />
-                  </svg>
-                </div>
-              </Transition>
+                  </svg></div
+              ></Transition>
             </div>
           </th>
-
           <th class="py-2">
             <div class="flex items-center justify-center gap-1">
               직업
-              <Transition name="check-pop">
-                <div
+              <Transition name="check-pop"
+                ><div
                   v-if="jobGrade"
                   class="flex items-center justify-center w-3.5 h-3.5 bg-green-500 rounded-full shadow-sm"
                 >
@@ -131,17 +122,15 @@
                       d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                       clip-rule="evenodd"
                     />
-                  </svg>
-                </div>
-              </Transition>
+                  </svg></div
+              ></Transition>
             </div>
           </th>
-
           <th class="py-2">
             <div class="flex items-center justify-center gap-1">
               자산
-              <Transition name="check-pop">
-                <div
+              <Transition name="check-pop"
+                ><div
                   v-if="assetGrade"
                   class="flex items-center justify-center w-3.5 h-3.5 bg-green-500 rounded-full shadow-sm"
                 >
@@ -156,9 +145,8 @@
                       d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                       clip-rule="evenodd"
                     />
-                  </svg>
-                </div>
-              </Transition>
+                  </svg></div
+              ></Transition>
             </div>
           </th>
         </tr>
@@ -276,7 +264,7 @@
               <span class="font-bold text-gray-800">
                 <CountUp
                   class="font-bold text-gray-800"
-                  :to="heightPercentile"
+                  :to="ensureMinOne(heightPercentile)"
                   :precision="0"
                   :duration="countDuration"
                 />
@@ -297,7 +285,7 @@
               <span class="font-bold text-gray-800">
                 <CountUp
                   class="font-bold text-gray-800"
-                  :to="bmiAnalysis.percentile"
+                  :to="ensureMinOne(bmiAnalysis.percentile)"
                   :precision="0"
                   :duration="countDuration"
                 />
@@ -318,7 +306,7 @@
               <span class="font-bold text-gray-800">
                 <CountUp
                   class="font-bold text-gray-800"
-                  :to="educationResult.percentile"
+                  :to="ensureMinOne(educationResult.percentile)"
                   :precision="0"
                   :duration="countDuration"
                 />
@@ -336,7 +324,7 @@
               <span class="font-bold text-gray-800">
                 <CountUp
                   class="font-bold text-gray-800"
-                  :to="salaryPercentile"
+                  :to="ensureMinOne(salaryPercentile)"
                   :precision="0"
                   :duration="countDuration"
                 />
@@ -354,7 +342,7 @@
               <span class="font-bold text-gray-800">
                 <CountUp
                   class="font-bold text-gray-800"
-                  :to="jobPercentile"
+                  :to="ensureMinOne(jobPercentile)"
                   :precision="0"
                   :duration="countDuration"
                 />
@@ -372,7 +360,7 @@
               <span class="font-bold text-gray-800">
                 <CountUp
                   class="font-bold text-gray-800"
-                  :to="assetPercentile"
+                  :to="ensureMinOne(assetPercentile)"
                   :precision="0"
                   :duration="countDuration"
                 />
@@ -447,7 +435,6 @@ const emit = defineEmits([
   'update-asset',
 ])
 
-// 🔥 [추가] 기준 성별/연령대 라벨
 const demographicLabel = computed(() => {
   if (!props.gender || !props.age) return ''
   const g = props.gender === 'male' ? '남성' : '여성'
@@ -456,10 +443,11 @@ const demographicLabel = computed(() => {
   return `${start}~${end}세 ${g}`
 })
 
-const toTopPercent = (score) => {
-  if (score == null) return 0
-  const top = 100 - score
-  return Math.max(0.1, top)
+// 🔥 [추가됨] 화면 표시용: 최소값 1 보장 함수
+const ensureMinOne = (val) => {
+  if (val == null) return 0
+  // 원본 값(val)을 그대로 쓰되, 1보다 작으면 1을 반환
+  return Math.max(1.1, Math.round(val))
 }
 
 const flashFlags = reactive({
@@ -544,7 +532,7 @@ const assetGrade = computed(() =>
   assetPercentile.value != null ? percentileToGrade(assetPercentile.value) : null,
 )
 
-// --- Watchers ---
+// --- Watchers (원본 값 전송) ---
 watch(heightPercentile, (p) => {
   if (p != null) {
     emit('update-height', { percentile: p })
@@ -555,9 +543,8 @@ watch(heightPercentile, (p) => {
 watch(
   () => bmiAnalysis.value,
   (val) => {
-    if (val && val.percentile != null) {
-      // ✅ [수정완료] BMI는 이미 100점 만점 기준이므로 그대로 전송 (100 - 삭제)
-      emit('update-bmi', { percentile: val.percentile })
+    if (val && val.score != null) {
+      emit('update-bmi', { percentile: val.score })
       triggerFlash('bmi')
     }
   },
